@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>555</width>
+    <height>810</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>555</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>555</width>
+    <height>810</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>12</pointsize>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Mr. Printer</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+background-color:#7db8f0;
+} 
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>501</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox{
+border:2px solid white;
+border-radius:10px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Вопрос 1. Использование</string>
+    </property>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>451</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox {
+   
+    font-size: 13px; /* Размер текста */
+
+    background-color: #dae7f0;
+    border-radius: 13px; /* Границы */
+    padding: 2px; /* Внутренние отступы */
+}
+
+
+QComboBox::item:selected{
+font-size:20pt;
+color:white;
+background-color: #64d4e3;
+}
+
+QComboBox QAbstractItemView::item:hover {
+    background-color: #64d4e3; /* Цвет фона при наведении */
+    color: #ffffff; /* Цвет текста при наведении */
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Профессиональное использование</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Офисное использование</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Домашнее использование</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>441</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Как ты планируешь использовать принтер?</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>200</y>
+      <width>501</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox{
+border:2px solid white;
+border-radius:10px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Вопрос 2. Цветная печать</string>
+    </property>
+    <widget class="QComboBox" name="comboBox_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>451</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox {
+   
+    font-size: 13px; /* Размер текста */
+
+    background-color: #dae7f0;
+    border-radius: 13px; /* Границы */
+    padding: 2px; /* Внутренние отступы */
+}
+
+
+QComboBox::item:selected{
+font-size:20pt;
+color:white;
+background-color: #64d4e3;
+}
+
+QComboBox QAbstractItemView::item:hover {
+    background-color: #64d4e3; /* Цвет фона при наведении */
+    color: #ffffff; /* Цвет текста при наведении */
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Да</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Нет</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>20</y>
+       <width>441</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Планируется печатать что-то в цвете?</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>340</y>
+      <width>501</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox{
+border:2px solid white;
+border-radius:10px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Вопрос 3. Бюджет</string>
+    </property>
+    <widget class="QComboBox" name="comboBox_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>451</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox {
+   
+    font-size: 13px; /* Размер текста */
+
+    background-color: #dae7f0;
+    border-radius: 13px; /* Границы */
+    padding: 2px; /* Внутренние отступы */
+}
+
+
+QComboBox::item:selected{
+font-size:20pt;
+color:white;
+background-color: #64d4e3;
+}
+
+QComboBox QAbstractItemView::item:hover {
+    background-color: #64d4e3; /* Цвет фона при наведении */
+    color: #ffffff; /* Цвет текста при наведении */
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Да</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Нет</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>20</y>
+       <width>441</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Бюджет меньше 30 000?</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>480</y>
+      <width>501</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox{
+border:2px solid white;
+border-radius:10px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Вопрос 4. Объем печати</string>
+    </property>
+    <widget class="QComboBox" name="comboBox_7">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>451</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox {
+   
+    font-size: 13px; /* Размер текста */
+
+    background-color: #dae7f0;
+    border-radius: 13px; /* Границы */
+    padding: 2px; /* Внутренние отступы */
+}
+
+
+QComboBox::item:selected{
+font-size:20pt;
+color:white;
+background-color: #64d4e3;
+}
+
+QComboBox QAbstractItemView::item:hover {
+    background-color: #64d4e3; /* Цвет фона при наведении */
+    color: #ffffff; /* Цвет текста при наведении */
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Да</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Нет</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>441</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Много планируется печатать?</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>730</y>
+      <width>501</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{border:2px solid #99c6f0;
+background-color:white;
+border-radius:10px;
+width:100px;
+height:100px;
+
+}
+
+QPushButton:hover{border:2px solid blue;
+background-color:#ededed;
+
+
+
+}</string>
+    </property>
+    <property name="text">
+     <string>ПОИСК </string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>620</y>
+      <width>501</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #dae7f0;;
+border-radius:15px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>0</y>
+      <width>441</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);</string>
+    </property>
+    <property name="text">
+     <string>Mr.Printer</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>555</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
