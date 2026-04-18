@@ -31,14 +31,19 @@
 ### 1. Склонируйте репозиторий:
 ```bash
 git clone https://github.com/kak-rastoki/название-репозитория.git
+```
 cd название-репозитория
 
 ### 2. Запустите exe чтобы протестировать работу
+```bash
 mister-printer\dist\MrPrinterExpert\MrPrinterExpert.exe
+```
 
 ### 3. Установите зависимости:
 
+```bash
 pip install -r requirements.txt
+```
 
 ### 4. Запустите приложение:
 
